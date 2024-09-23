@@ -1,0 +1,375 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    background-color: var(--color3);
+    font-family: "Raleway", sans-serif;
+    text-shadow:1px 1px white;
+    background-color: var(--color3);   
+}
+body::before{
+    opacity: 1.3;
+
+}
+ :root{
+    --color1: #6F0D0B;
+    --color2: #D4FCC3;
+    --color3: #e0dcdc;
+ }
+
+/* BARRA DE NAVEGACION */
+.barra_nav{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.yo{
+    display: flex;
+    gap:5px;
+}
+.navegador{
+    display: flex;
+    gap: 20px;
+}
+.navegador a{
+    text-decoration: none;
+    color: black;
+}
+.navegador a:hover,
+.presentacion_redes a:hover{
+    color: var(--color1);
+    border-bottom: 1px solid var(--color1);
+    transform: scale(1.1);
+}
+.navegador p{
+    font-weight: bold;
+}
+
+/* PRESENTACION */
+.presentacion{
+    margin: 20px auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+   
+}
+.presentacion_texto{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.presentacion_img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion_img img{
+    width: 100%;
+    height: 75%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.presentacion_redes a{
+    text-decoration: none;
+    color: black;
+}
+
+/* SOBRE MI */
+.sobreMi{
+    padding-bottom: 50px;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;    
+    align-items: center;
+    background-color: var(--color2);
+}
+.sobreMi_texto{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+/* SKILLS Y HOBBIES*/
+
+.skills,
+.hobbies{
+    margin: 30px auto;
+    width: 85%;  
+      
+}
+.sobreMi_texto h2,
+.skills h2,
+.hobbies h2,
+.formacionA h2,
+.formacionA h2,
+.experienciaP h2{
+    text-align: center;
+    margin: 40px 0px;
+}
+.skills_info,
+.hobbies_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.skills_tec,
+.hobbies_tec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 00px 10px 20px;
+    background-color: white;
+    width: 14%;
+}
+.skills_tec:hover,
+.hobbies_tec:hover{
+    transform: scale(0.9);
+}
+.hobbies_tec{
+    padding-right: 20px;
+}
+.skills_tec img,
+.hobbies_tec img{
+    width: 45%;
+}
+
+/* FORMACION ACADEMICA */
+    .formacionA{
+        width: 100%;
+        margin: 30px auto;
+        background-color: var(--color2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .formacion_cuadros{
+        align-self: center;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .formacion_U{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px;
+        width: 30%;
+        background-color: white;
+    }
+    .formacion_U:hover{
+        border: 2px black solid;
+        transform: scale(1.1);
+    }
+    .formacion_U img{
+        width: 40%;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+/* EXPERIENCIA PROFECIONAL */
+.experienciaP{
+    width: 85%;  
+    margin: 30px auto;   
+}
+.experiencia{
+    width: 100%;
+    display: flex;
+}
+.experiencia img{
+    width: 60%;
+}
+.experiencia_btn{
+    width: 40%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-shadow: none;
+}
+.exp_btn{
+    display: flex;
+    gap: 20px;
+}
+.exp_btn a:nth-child(1){
+    text-decoration: none;
+    padding: 20px;
+    background-color:white;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+}
+.exp_btn a:nth-child(2){
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    background-color:var(--color1)
+}
+.exp_btn a:hover{
+    transform: scale(1.1);
+}
+
+/* CONTACTO */
+.contacto{
+    width: 100%;
+    background-color: var(--color2);
+    padding:10px 0px;
+}
+.contacto_cuadro{
+    font-size: 13px;
+    width: 85%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.contacto_cuadro img{
+    width: 40%;
+    height: 30em;
+}
+.contacto_formulario{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;    
+}
+.contacto_formulario input{
+    padding: 10px;
+    border: none;
+
+}
+.contacto_formulario input:focus::placeholder,
+.contacto_formulario textarea:focus::placeholder{
+    color: var(--color1);     
+}
+.contacto_formulario input:focus,
+.contacto_formulario textarea:focus{
+    outline: none;
+    border-bottom: 2px solid var(--color1);
+}
+.contacto_formulario textarea{
+    border: none;
+    padding: 10px;
+    height: 35%;   
+}
+.contacto_formulario button{
+    width: 35%;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--color1);
+}
+/* FOOTER */
+.footer{
+    text-align: center;
+    margin: 40px 20px;
+}
+
+@media (max-width:768px){
+    .navegador a{
+        display: none;
+    }
+    /* SOBRE MI */
+    .sobreMi{
+        justify-content: center;
+        padding-left: 0%;
+    }
+    .sobreMi_texto{
+        width: 85%;
+    }
+    /* SKILLS Y HOBBIES*/
+    .skills_tec,
+    .hobbies_tec{
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        width: 12%;
+    }
+
+    .skills_tec img
+    .hobbies_tec img{
+        width: 60%;
+    }
+    
+    /* EXPERIENCIA PROFECIONAL */
+    .experiencia{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .experiencia img{
+        width: 100%;
+    }
+    .experiencia_btn{
+        width: 60%;
+    }
+    /* CONTACTO */
+    .contacto_cuadro img{
+        display: none;
+    }
+    .contacto_formulario{
+        width: 90%;
+    }    
+}
+@media (max-width:360px){
+    .yo img{
+        display: none;
+    }
+    .navegador p{
+        font-weight: lighter;
+        align-self: center;        
+    }
+    .presentacion{
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    .presentacion_img {
+        width: 50%;
+    }
+    .presentacion_texto{
+        width: 100%;
+    }
+    /* SKILLS Y HOBBIES*/
+    .skills_tec,
+    .hobbies_tec{
+        width: 25%;
+    }
+    /* EXPERIENCIA PROFECIONAL */
+    .experiencia_btn{
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .exp_btn a:nth-child(1){
+        padding: 10px;
+    }
+    .exp_btn a:nth-child(2){
+        padding: 10px 20px;
+    }
+    /* FORMACION */
+    .formacion_U{
+        width: 90%;
+    }
+    .formacion_cuadros{
+        flex-direction: column;
+    }
+    .contacto_formulario button{
+        width: 50%;
+        padding: 5px 10px;
+        
+    }
+
+  
+
+}
